@@ -61,7 +61,7 @@ listener "tcp" {
 
 max_lease_ttl = "10h"
 default_lease_ttl = "10h"
-api_addr = "https://164.92.92.186:8200"
+api_addr = "https://XXX"
 
 ```
 
@@ -167,13 +167,13 @@ server {
 server {
         listen 80;
         listen 443;
-        server_name  164.92.92.186;
+        server_name  XXX;
         return 301 https://www.skillzguide.com$request_uri;
 }
 
 
 server {
-        listen 164.92.92.186;
+        listen XXXX;
         server_name skillzguide.com;
         return 301 https://www.skillzguide.com$request_uri;
 }
